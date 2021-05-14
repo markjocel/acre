@@ -1,0 +1,17 @@
+@import url(../styles/flexboxgrid.css);
+@import url(../styles/normalize.css);
+@import url(../styles/variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root{
+    --main: #77acf1;
+    --black: #202121;
+    --l-grey: #eef5f3;
+    --grey: #88908e;
+    --d-grey: #555a59;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
