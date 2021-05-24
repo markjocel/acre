@@ -1,0 +1,8 @@
+request - fit to work, consultation, update,  others
+
+employee user
+sign in sign up declare health, upload forms, submit
+
+doctor user - super user
+list of all employee queue
+double click to second page
