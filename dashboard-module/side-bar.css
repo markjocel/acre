@@ -1,0 +1,44 @@
+.side-bar{
+    min-width: 15vw;
+    width: 15vw;
+    background-color: white;
+}
+
+.side-bar .side-container{
+    padding: 1.5rem 0rem 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.side-bar .logo{
+    display: flex;
+    color: var(--main);
+    margin-bottom: 2.5rem;
+}
+
+.side-bar ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.side-bar ul li{
+    color: var(--d-grey);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: .9rem;
+    height: 2.7rem;
+    opacity: .5;
+    cursor: pointer;
+}
+.side-bar ul li .icon{
+    height: 1.3rem;
+    margin-right: 1rem;
+    opacity: .7;
+}
+
+.side-bar ul li.active{
+    border-right: 3px solid var(--main);
+    opacity: 1;
+    font-weight: 600;
+}

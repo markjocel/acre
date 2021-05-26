@@ -1,0 +1,66 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--l-grey);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header .title h1{
+    margin: 0;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.header .title p{
+    margin-top: .2rem;
+    margin-bottom: 0;
+    color: var(--black);
+    font-size: .8rem
+}
+
+.header .title .day{
+    font-weight: 700;
+    color: var(--main);
+}
+
+.header .title .date{
+    font-weight: 600;
+    color: var(--d-grey);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile .name{
+    margin-left: .5rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.profile .picture{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--main);
+    border-radius: 2rem;
+}
+
+.profile .picture img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.profile .arrow-down{
+    width: 10px;
+    height: auto;
+    margin-left: .5rem;
+}

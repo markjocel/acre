@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="stylesheet" href="../dashboard-module/dashboard.css">
+    <link rel="stylesheet" href="../dashboard-module/header.css">
+    <link rel="stylesheet" href="../dashboard-module/side-bar.css">
 </head>
 <body>
     <!-- <div class="menu">
@@ -20,14 +22,18 @@
             </span>
 
             <ul>
-                <li class="active">
-                    <img class="icon" src="../assets/icons/icon-dash.png" alt="">
-                    <span class="text">Dashboard</span>
-                </li>
-                <li>
-                    <img class="icon" src="../assets/icons/icon-profile.png" alt="">
-                    <span class="text">Profile</span>
-                </li>
+                <a href="./employee-dashboard.html">
+                    <li class="active">
+                        <img class="icon" src="../assets/icons/icon-dash.png" alt="">
+                        <span class="text">Dashboard</span>
+                    </li>
+                </a>
+                <a href="./profile.html">
+                    <li>
+                        <img class="icon" src="../assets/icons/icon-profile.png" alt="">
+                        <span class="text">Profile</span>
+                    </li>
+                </a>
             </ul>
         </div>
         </div>
@@ -46,14 +52,14 @@
                         <!-- Insert picture -->
                         <img src="https://picsum.photos/200" alt="">
                     </div>
-                    <span class="name">Mark</span>
+                    <span class="name">John</span>
                     <img  src="../assets/icons/icon-arrow-down.png" class="arrow-down" alt="">
                 </div>
             </div>
 
-            <div class="greeting">
+            <div class="greeting container-shadow">
                 <div class="texts">
-                    <h2>Hello, Mark!</h2>
+                    <h2>Hello, John!</h2>
                     <p>Labore dolor proident ut id do quis laborum Lorem exercitation aute esse amet consequat et.</p>
                 </div>
                 <div class="image">
@@ -63,7 +69,7 @@
                 <span class="dismiss">✕</span>
             </div>
 
-            <div class="actions">
+            <div class="actions container-shadow">
                 <h2>Actions</h2>
                 <div class="d-flex flex-wrap">
                     <div class="action">
@@ -81,42 +87,100 @@
                 </div>
             </div>
 
-            <div class="transactions">
-                <h2>Medical Transactions</h2>
+            <div class="transactions container-shadow">
+                <div class="transaction-header mb-2 d-flex justify-content-between align-items-center">
+                    <h2>Medical Transactions</h2>
+                    <div class="search">
+                        <!-- Remove hidden on click search -->
+                        <input type="text" class="input-primary hidden" placeholder="Search here...">
+                        <button class="btn-primary no-width"><img width="15rem" class="" src="../assets/icons/search.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="table-holder">
+                    <table>
+                        <tr>
+                            <th class="desc">
+                                <span class="text">Request Date</span>
+                            </th>
+                            <th class="asc">
+                                <span class="text">Request</span>
+                            </th>
+                            <th>
+                                <span class="text">Procedure</span>
+                            </th>
+                            <th>
+                                <span class="text">Status</span>
+                            </th>
+                            <th>
+                                <span class="text">Assessment</span>
+                            </th>
+                            <th><span class="kebab"></span></th>
+                        </tr>
 
-                <table>
-                    <tr>
-                        <th>Request Date</th>
-                        <th>Request</th>
-                        <th>Procedure</th>
-                        <th>Status</th>
-                        <th>Assessment</th>
-                    </tr>
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Completed</td>
+                            <td>Sample Assessment</td>
+                            <td><span class="kebab"></span></td>
+                        </tr>
 
-                    <tr>
-                        <td>May 16, 2021</td>
-                        <td>Sample Request</td>
-                        <td>Sample Procedure</td>
-                        <td>Completed</td>
-                        <td>Sample Assessment</td>
-                    </tr>
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Completed</td>
+                            <td>Sample Assessment</td>
+                            <td><span class="kebab"></span></td>
+                        </tr>
 
-                    <tr>
-                        <td>May 16, 2021</td>
-                        <td>Sample Request</td>
-                        <td>Sample Procedure</td>
-                        <td>Completed</td>
-                        <td>Sample Assessment</td>
-                    </tr>
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Completed</td>
+                            <td>Sample Assessment</td>
+                            <td><span class="kebab"></span></td>
+                        </tr>
 
-                    <tr>
-                        <td>May 16, 2021</td>
-                        <td>Sample Request</td>
-                        <td>Sample Procedure</td>
-                        <td>Completed</td>
-                        <td>Sample Assessment</td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Completed</td>
+                            <td>Sample Assessment</td>
+                            <td><span class="kebab"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Completed</td>
+                            <td>Sample Assessment</td>
+                            <td><span class="kebab"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Completed</td>
+                            <td>Sample Assessment</td>
+                            <td><span class="kebab"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Completed</td>
+                            <td>Sample Assessment</td>
+                            <td><span class="kebab"></span></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </main>

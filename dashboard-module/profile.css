@@ -1,0 +1,96 @@
+.profile-menu, .profile-content{
+    background: white;
+    min-height: 70vh;    
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.profile-menu{
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+
+.profile-content{
+    display: flex;
+    flex-flow: column;
+}
+
+.profile-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-image img{
+    width: 60%;
+}
+
+.profile-image .edit-image{
+    width: 12px;
+    height: 12px;
+    background: var(--main);
+    position: absolute;
+    padding: .4rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    bottom: 0%;
+    left: 65%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image .edit-image img{
+    width: 100%;
+}
+
+.position{
+    font-size: .8rem;
+    color: var(--d-grey);
+}
+
+.account-settings{
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-settings li:first-child{
+    border-top: 1px solid var(--l-grey);
+}
+
+.account-settings li{
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: .8rem 0;
+    border-bottom: 1px solid var(--l-grey);
+    opacity: .8;
+}
+
+.account-settings li.active{
+    opacity: 1;
+    font-weight: 600;
+}
+
+.account-settings li:hover{
+    opacity: 1;
+}
+
+.profile-content label{
+    display: block;
+    color: var(--d-grey);
+    font-size: .8rem;
+    margin-bottom: .5em;
+}
+
+.profile-content input,textarea{
+    width: 100%;
+}
+
+.profile-content .btn-edit{
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 1.1rem;
+    width: 10rem;
+}
