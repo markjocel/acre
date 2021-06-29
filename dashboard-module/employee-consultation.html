@@ -10,8 +10,49 @@
     <link rel="stylesheet" href="../dashboard-module/header.css">
     <link rel="stylesheet" href="../dashboard-module/side-bar.css">
 </head>
-<body>
+<body style="overflow: hidden;">
+
     <main class="d-flex">
+        
+        <div class="modal-background">
+            <div class="row align-items-center justify-content-center h-100 ">
+                <div class="col-xs-7">
+                    <div class="modal-holder">
+                        <span class="close-modal">✕</span>
+                        <div class="white-container sick-leave" style="padding: 2rem;">
+                            <h2 class="m-0 mb-2">File Consultation</h2>
+            
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                    <label for="">Start Date</label>
+                                    <input type="text" class="input-primary" placeholder="Enter Date">
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <label for="">End Date</label>
+                                    <input type="text" class="input-primary" placeholder="Enter Date">
+                                </div>
+                            </div>
+            
+                            <div class="row mt-2">
+                                <div class="col-xs-12 col-sm-5">
+                                    <label for="">Health Concern</label>
+                                    <textarea class="input-primary" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="col-xs-12 col-sm-5">
+                                    <label for="">Medications Taken</label>
+                                    <input type="text" class="input-primary" placeholder="Enter medication">
+                                    <!-- <input type="text" class="input-primary mt-1" placeholder="Enter medication"> -->
+                                    <button class="btn-gray no-width mt-1 d-flex align-items-center"><i class="icon-add"></i>Add more</button>
+                                </div>
+                            </div>
+            
+                            <button class="btn-primary mt-3">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="side-bar">
             <div class="side-container">
             <span class="logo">

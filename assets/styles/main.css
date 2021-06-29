@@ -3,17 +3,6 @@
 @import url(../styles/variables.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-:root{
-    --main: #77acf1;
-    --black: #202121;
-    --l-grey: #f2f3f7;
-    --grey: #88908e;
-    --d-grey: #555a59;
-    --secondary: #EEE8A9;
-    --purple: #9FA1FD;
-    --green: #006963;
-    --red: #ff0033;
-}
 
 html{
     font-size: 15px;
@@ -22,26 +11,36 @@ html{
 }
 
 /* Components */
-.btn-primary{
+button{
     outline: none;
     border: none;
-    background: var(--main);
-    color: white;
     font-weight: 600;
     font-size: .9rem;
     padding: .8rem;
     line-height: 1;
     cursor: pointer;
     border-radius: .8rem;
-    min-width: 7rem;
+    min-width: 10rem;
+    min-height: 2.8rem;
     box-sizing: border-box;
 }
 
-.btn-primary.no-width{
-    min-width: 0;
+.btn-primary{
+    background: var(--main);
+    color: white;
 }
 
-.btn-primary:hover{
+.btn-gray{
+    background: var(--l-grey);
+    color: var(--d-grey);
+}
+
+button.no-width{
+    min-width: 0;
+    min-height: 0;
+}
+
+button:hover{
     filter: brightness(95%);
     transition: all ease-out .2s;
 }
@@ -54,6 +53,7 @@ html{
     background-color: var(--l-grey);
     border: none;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .input-primary:focus{
@@ -64,6 +64,13 @@ html{
 
 .input-primary.error{
     border: 1px solid var(--red);
+}
+
+label{
+    display: block;
+    color: var(--d-grey);
+    font-size: .8rem;
+    margin-bottom: .5em;
 }
 
 main{
@@ -80,3 +87,164 @@ main{
 .container-shadow{
     filter: drop-shadow(0px 2px 2px rgb(220, 220, 220));
 }
+
+.white-container{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.upload-container{
+    width: 100%;
+    min-height: 15rem;
+    border-radius: 1rem;
+    border-color: #cccccc;
+    border-style: dashed;
+    border-width: 2px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.upload-container b{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.upload-attachment{
+    border-radius: 1rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    /* border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+.upload-attachment .file-name{
+    font-weight: 700;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.upload-attachment .file-name label{
+    font-weight: 300;
+    font-size: .6rem;
+}
+
+.upload-attachment::before{
+    content: url(../icons/icon-file.svg);
+    margin-right: .5rem;
+}
+
+.upload-attachment::after{
+    content: url(../icons/icon-close-file.png);
+    margin-left: auto;
+    opacity: .5;
+    transform: scale(.7);
+    cursor: pointer;
+}
+
+
+/* Modal */
+.modal-background{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.modal-holder{
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.modal-holder .close-modal{
+    font-size: 1.5rem;
+    opacity: .7;
+    margin: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.modal-holder .close-modal:hover{
+    opacity: 1;
+    transition: all ease-in .5s;
+}
+
+/* Alert message */
+.alert-message-holder{
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    position: fixed;
+}
+
+.alert{
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem .2rem;
+    width: 20rem;
+    border-left: 3px solid;
+    display: flex;
+    align-items: center;
+}
+
+.alert::before{
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: .5rem;
+    color: white;
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+
+.alert.error{
+    border-color: var(--error);
+}
+
+.alert.error::before{
+    content: '✕';
+    background-color: var(--error);
+}
+
+.alert.success{
+    border-color: var(--success);
+}
+
+.alert.success::before{
+    content: '✔';
+    background-color: var(--success);
+}
+
+.alert p{
+    margin: 0;
+}
+
+.alert .message .first-line{
+    font-weight: 600;
+}
+
+.alert .message .second-line{
+    font-size: .9rem;
+    color: var(--grey);
+}
+
+.close-alert{
+    content: url(../icons/icon-close-file.png);
+    margin-left: auto;
+    transform: scale(.7);
+    opacity: .6;
+    cursor: pointer;
+}
+
