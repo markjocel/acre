@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../dashboard-module/profile.css">
+    <link rel="stylesheet" href="../dashboard-module/header.css">
+    <link rel="stylesheet" href="../dashboard-module/side-bar.css">
+</head>
+<body>
+    <!-- <div class="menu">
+        menu
+    </div> -->
+    <main class="d-flex">
+        <div class="side-bar">
+            <div class="side-container">
+            <span class="logo">
+                LOGO HERE
+            </span>
+
+            <ul>
+                <a href="./doctor-dashboard.html">
+                    <li class="active">
+                        <img class="icon" src="../assets/icons/icon-dash.png" alt="">
+                        <span class="text">Dashboard</span>
+                    </li>
+                </a>
+                <a href="./doctor-records.html">
+                    <li>
+                        <img class="icon" src="../assets/icons/icon-records.png" alt="">
+                        <span class="text">Medical Records</span>
+                    </li>
+                </a>
+                <a href="./profile.html">
+                    <li>
+                        <img class="icon" src="../assets/icons/icon-profile.png" alt="">
+                        <span class="text">Profile</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <span class="title">
+                    <h1>Assessment</h1>
+                    <p>
+                        <span class="day">Sunday</span>
+                        <span class="date">May 16, 2021</span>
+                    </p>
+                </span>
+
+                <div class="profile">
+                    <div class="picture">
+                        <!-- Insert picture -->
+                        <img src="https://picsum.photos/200" alt="">
+                    </div>
+                    <span class="name">John</span>
+                    <img  src="../assets/icons/icon-arrow-down.png" class="arrow-down" alt="">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-xs-12">
+                    <div class="profile-content container-shadow">
+                        <div class="scrollable" style="max-height: 60vh;">
+                            <h2 class="m-0 mb-2">Electronic Medical Record</h2>
+                            <div class="row">
+                                <div class="col-xs-12 mb-2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3">
+                                            <label for="">Date</label>
+                                            <input type="text" class="input-primary" placeholder="">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <label for="">Time</label>
+                                            <input type="text" class="input-primary" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <label for="">First Name</label>
+                                    <input type="text" class="input-primary" value="John" placeholder="Insert first name">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <label for="">Middle Name</label>
+                                    <input type="text" class="input-primary" value="Michael" placeholder="Insert first name">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <label for="">Last Name</label>
+                                    <input type="text" class="input-primary" value="Doe" placeholder="Insert first name">
+                                </div>
+                                <div class="col-xs-6 col-sm-3 mb-2">
+                                    <label for="">Sex</label>
+                                    <input type="text" class="input-primary" value="Male" placeholder="Insert first name">
+                                </div>
+                                <div class="col-xs-6 col-sm-3 mb-2">
+                                    <label for="">Age</label>
+                                    <input type="text" class="input-primary" value="20" placeholder="Insert first name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-xs-6 col-sm-3">
+                                    <label for="">Temperature</label>
+                                    <input type="text" class="input-primary" value="" placeholder="">
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <label for="">Blood Pressure</label>
+                                    <input type="text" class="input-primary" value="" placeholder="">
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <label for="">Heart Rate</label>
+                                    <input type="text" class="input-primary" value="" placeholder="">
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <label for="">Respiratory Rate</label>
+                                    <input type="text" class="input-primary" value="" placeholder="">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 mb-2">
+                                    <label for="">Subjective</label>
+                                    <textarea name="" id="" cols="10" rows="5" class="input-primary"></textarea>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 mb-2">
+                                    <label for="">Objective</label>
+                                    <textarea name="" id="" cols="10" rows="5" class="input-primary"></textarea>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 mb-2">
+                                    <label for="">Assessment</label>
+                                    <textarea name="" id="" cols="30" rows="5" class="input-primary"></textarea>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 mb-2">
+                                    <label for="">Plan</label>
+                                    <textarea name="" id="" cols="30" rows="5" class="input-primary"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row justify-content-between mt-auto">
+                            <div class="col-xs-5 col-sm-3">
+                                <button class="btn-grey">Back</button>
+                            </div>
+                            <div class="col-xs-5 col-sm-3 d-flex">
+                                <button class="btn-primary ml-auto">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

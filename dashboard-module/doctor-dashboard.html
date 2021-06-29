@@ -12,24 +12,6 @@
 </head>
 <body>
     <main class="d-flex">
-        <div class="alert-message-holder">
-            <div class="alert success container-shadow">
-                <div class="message">
-                    <p class="first-line">Success!</p>
-                    <p class="second-line">Request has been added.</p>
-                </div>
-                <div class="close-alert"></div>
-            </div>
-    
-            <div class="alert error container-shadow">
-                <div class="message">
-                    <p class="first-line">Error!</p>
-                    <p class="second-line">Something went wrong.</p>
-                </div>
-                <div class="close-alert"></div>
-            </div>
-        </div>
-
         <div class="side-bar">
             <div class="side-container">
             <span class="logo">
@@ -37,10 +19,16 @@
             </span>
 
             <ul>
-                <a href="./employee-dashboard.html">
+                <a href="./doctor-dashboard.html">
                     <li class="active">
                         <img class="icon" src="../assets/icons/icon-dash.png" alt="">
                         <span class="text">Dashboard</span>
+                    </li>
+                </a>
+                <a href="./doctor-records.html">
+                    <li>
+                        <img class="icon" src="../assets/icons/icon-records.png" alt="">
+                        <span class="text">Medical Records</span>
                     </li>
                 </a>
                 <a href="./profile.html">
@@ -72,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="greeting container-shadow">
+            <div class="greeting container-shadow mt-5">
                 <div class="texts">
                     <h2>Hello, John!</h2>
                     <p>Labore dolor proident ut id do quis laborum Lorem exercitation aute esse amet consequat et.</p>
@@ -84,27 +72,9 @@
                 <span class="dismiss">✕</span>
             </div>
 
-            <div class="actions container-shadow">
-                <h2>Get Medical Certificate</h2>
-                <div class="d-flex flex-wrap">
-                    <div class="action">
-                        <span class="icon-holder"></span>
-                        <span class="action-text">Clean Case</span>
-                    </div>
-                    <div class="action">
-                        <span class="icon-holder"></span>
-                        <span class="action-text">Sick Leave</span>
-                    </div>
-                    <div class="action">
-                        <span class="icon-holder"></span>
-                        <span class="action-text">Consultation</span>
-                    </div>
-                </div>
-            </div>
-
             <div class="transactions container-shadow">
                 <div class="transaction-header mb-2 d-flex justify-content-between align-items-center">
-                    <h2>Medical Transactions</h2>
+                    <h2>Service Queue</h2>
                     <div class="search">
                         <!-- Remove hidden on click search -->
                         <input type="text" class="input-primary hidden" placeholder="Search here...">
@@ -136,7 +106,25 @@
                             <td>May 16, 2021</td>
                             <td>Sample Request</td>
                             <td>Sample Procedure</td>
-                            <td>Completed</td>
+                            <td>Pending</td>
+                            <td>Sample Assessment</td>
+                            <td>
+                                <span class="kebab">
+                                    <i class="icon-kebab"></i>
+                                    <div class="kebab-menu">
+                                        <span class="item">View</span>
+                                        <span class="item">Edit</span>
+                                        <span class="item">Other Action</span>
+                                    </div>
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>May 16, 2021</td>
+                            <td>Sample Request</td>
+                            <td>Sample Procedure</td>
+                            <td>Pending</td>
                             <td>Sample Assessment</td>
                             <td><span class="kebab"><i class="icon-kebab"></i></span></td>
                         </tr>
@@ -145,7 +133,7 @@
                             <td>May 16, 2021</td>
                             <td>Sample Request</td>
                             <td>Sample Procedure</td>
-                            <td>Completed</td>
+                            <td>Pending</td>
                             <td>Sample Assessment</td>
                             <td><span class="kebab"><i class="icon-kebab"></i></span></td>
                         </tr>
@@ -154,7 +142,7 @@
                             <td>May 16, 2021</td>
                             <td>Sample Request</td>
                             <td>Sample Procedure</td>
-                            <td>Completed</td>
+                            <td>Pending</td>
                             <td>Sample Assessment</td>
                             <td><span class="kebab"><i class="icon-kebab"></i></span></td>
                         </tr>
@@ -163,7 +151,7 @@
                             <td>May 16, 2021</td>
                             <td>Sample Request</td>
                             <td>Sample Procedure</td>
-                            <td>Completed</td>
+                            <td>Pending</td>
                             <td>Sample Assessment</td>
                             <td><span class="kebab"><i class="icon-kebab"></i></span></td>
                         </tr>
@@ -172,7 +160,7 @@
                             <td>May 16, 2021</td>
                             <td>Sample Request</td>
                             <td>Sample Procedure</td>
-                            <td>Completed</td>
+                            <td>Pending</td>
                             <td>Sample Assessment</td>
                             <td><span class="kebab"><i class="icon-kebab"></i></span></td>
                         </tr>
@@ -181,16 +169,7 @@
                             <td>May 16, 2021</td>
                             <td>Sample Request</td>
                             <td>Sample Procedure</td>
-                            <td>Completed</td>
-                            <td>Sample Assessment</td>
-                            <td><span class="kebab"><i class="icon-kebab"></i></span></td>
-                        </tr>
-
-                        <tr>
-                            <td>May 16, 2021</td>
-                            <td>Sample Request</td>
-                            <td>Sample Procedure</td>
-                            <td>Completed</td>
+                            <td>Pending</td>
                             <td>Sample Assessment</td>
                             <td><span class="kebab"><i class="icon-kebab"></i></span></td>
                         </tr>
