@@ -1,0 +1,154 @@
+
+.table-holder{
+    max-height: 500px;
+    min-height: 500px;
+    overflow-y: scroll;
+}
+
+.table-holder::-webkit-scrollbar{
+    width: .4rem;
+}
+  
+.table-holder::-webkit-scrollbar-track {
+    background: none;
+}
+  
+.table-holder:hover::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.table-holder::-webkit-scrollbar-thumb {
+    background: none
+}
+
+.table-holder:hover::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.table-holder::-webkit-scrollbar-thumb:hover {
+    background: none;
+}
+
+.table-holder:hover::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.table-holder table{
+    border-collapse: separate;
+    border-spacing: 0 .5rem;
+    width: 100%;
+    font-size: .9rem;
+}
+
+.table-holder th,td{
+    border-bottom: 1px solid var(--l-grey);
+}
+
+.table-holder th{
+    padding: 1rem;
+    text-align: left;
+    color: var(--d-grey);
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 2;
+}
+
+.table-holder td{
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.table-holder th .text{
+    position: relative;
+}
+
+.table-holder th .text::before{
+    content :'';
+    background-image: url(/assets/icons/sort.svg);
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    width: 8px;
+    height: 8px;
+    bottom: 2px;
+    transform: rotate(180deg);
+}
+
+.table-holder th .text::after{
+    content :'';
+    background-image: url(/assets/icons/sort.svg);
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    width: 8px;
+    height: 8px;
+    top: 2px;
+}
+
+.table-holder th .text::after,th .text::before{
+    position: absolute;
+    right: -1rem;
+    line-height: 1;
+}
+
+.table-holder th.asc .text::before{
+    display: none;
+}
+
+.table-holder th.asc .text::after{
+    top: 30%;
+}
+
+.table-holder th.desc .text::after{
+    display: none;
+}
+
+.table-holder th.desc .text::before{
+    bottom: 25%;
+}
+
+
+
+.table-holder td .kebab{
+    position: relative;
+}
+
+.kebab-menu::after{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    display: block;
+    content: '';
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.kebab-menu{
+    position: absolute;
+    background-color: white;
+    padding: .5rem;
+    right: -10px;
+    min-width: 6rem;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 15px -5px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.kebab-menu .item{
+    font-weight: 700;
+    font-size: .8rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    display: block;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    cursor: pointer;
+}
+
+.kebab-menu .item:last-child{
+    border: none;
+}
