@@ -11,6 +11,12 @@ html{
     color: var(--black);
 }
 
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 13px !important;
+    }
+}
+
 /* Components */
 button{
     outline: none;
@@ -96,7 +102,6 @@ main{
 }
 
 .upload-container{
-    width: 100%;
     min-height: 15rem;
     border-radius: 1rem;
     border-color: #cccccc;
@@ -289,4 +294,14 @@ main{
 
 .scrollable:hover::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@media only screen and (max-width: 768px){
+    .content{
+        min-height: calc(100vh - 50px - 6rem);
+        padding: 0rem 2rem 6rem;
+    }
+    .alert-message-holder{
+        bottom: 4rem;
+    }
 }

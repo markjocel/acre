@@ -3,10 +3,12 @@
     max-height: 500px;
     min-height: 500px;
     overflow-y: scroll;
+    max-width: calc(100vw - 23rem);
 }
 
 .table-holder::-webkit-scrollbar{
     width: .4rem;
+    height: .4rem;
 }
   
 .table-holder::-webkit-scrollbar-track {
@@ -54,6 +56,7 @@
     top: 0;
     background: white;
     z-index: 2;
+    white-space: nowrap;
 }
 
 .table-holder td{
@@ -151,4 +154,10 @@
 
 .kebab-menu .item:last-child{
     border: none;
+}
+
+@media only screen and (max-width: 768px){
+    .table-holder{
+        max-width: calc(100vw - 7rem);
+    }
 }

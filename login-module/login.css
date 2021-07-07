@@ -126,8 +126,8 @@
 }
 
 /* Responsive */
-@media only screen and (max-width: 767px ){
-    .login-image{
-        display: none;
+@media only screen and (max-width: 1023px ){
+    .login-container{
+        flex-flow: column;
     }
 }

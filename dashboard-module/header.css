@@ -10,6 +10,8 @@
     position: sticky;
     top: 0;
     z-index: 10;
+
+    margin: -5px;
 }
 
 .header .title h1{
@@ -39,6 +41,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .profile .name{
@@ -51,16 +54,56 @@
     width: 2.5rem;
     height: 2.5rem;
     background-color: var(--main);
-    border-radius: 2rem;
+    border-radius: .5rem;
 }
 
 .profile .picture img{
     width: 100%;
-    border-radius: 2rem;
+    border-radius: .5rem;
 }
 
 .profile .arrow-down{
     width: 10px;
     height: auto;
     margin-left: .5rem;
+}
+
+.dropdown::before{
+    content: '';
+    display: block;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    top: -.4rem;
+    position: absolute;
+    right: .7rem;
+
+    transform: rotate(45deg);
+}
+
+.dropdown{
+    position: absolute;
+    background-color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+    bottom: -5rem;
+    right:-10px;
+    min-width: 6rem;
+    box-shadow: 3px 3px 15px -5px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.dropdown .item{
+    font-weight: 700;
+    font-size: .8rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    display: block;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    cursor: pointer;
+}
+
+.dropdown .item:last-child{
+    border: none;
 }
